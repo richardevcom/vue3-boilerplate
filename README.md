@@ -1,6 +1,6 @@
 # Vue 3 boilerplate - Vite, Pinia, Vue Router & Tailwind CSS
 
-This boilerplate will help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This boilerplate was created as part of tutorial series found here: will help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 ## Support & collaboration
 
@@ -20,8 +20,19 @@ Additionally I added [vite-svg-loader](https://github.com/jpkleemans/vite-svg-lo
 ## Install
 
 ```
+npm i @richardecom/vue3-boilerplate
+```
+
+or
+
+```
 git clone https://github.com/richardevcom/vue3boilerplate.git
-cd vue3boilerplate
+```
+
+then
+
+```
+cd vue3-boilerplate
 npm install
 ```
 
