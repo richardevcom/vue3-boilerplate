@@ -1,29 +1,51 @@
 {
-  "name": "vue3boilerplate",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
-  },
-  "dependencies": {
-    "pinia": "^2.0.16",
-    "vue": "^3.2.37",
-    "vue-router": "^4.1.2"
-  },
-  "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.0",
-    "@vitejs/plugin-vue": "^3.0.1",
-    "@vue/eslint-config-prettier": "^7.0.0",
-    "autoprefixer": "^10.4.8",
-    "eslint": "^8.5.0",
-    "eslint-plugin-vue": "^9.0.0",
-    "postcss": "^8.4.14",
-    "postcss-import": "^14.1.0",
-    "prettier": "^2.5.1",
-    "tailwindcss": "^3.1.7",
-    "vite": "^3.0.1",
-    "vite-svg-loader": "^3.4.0"
-  }
+	"name": "@richardev/vue3-boilerplate",
+	"description": "Quick boilerplate for your next project, containing - Vite, Vuex, Vue Router & Tailwind CSS. This was created as part of my tutorial series.",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richardevcom/vue3-boilerplate.git"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview --port 4173",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+	},
+	"dependencies": {
+		"pinia": "^2.0.16",
+		"vue": "^3.2.37",
+		"vue-router": "^4.1.2"
+	},
+	"devDependencies": {
+		"@rushstack/eslint-patch": "^1.1.0",
+		"@vitejs/plugin-vue": "^3.0.1",
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"autoprefixer": "^10.4.8",
+		"eslint": "^8.5.0",
+		"eslint-plugin-vue": "^9.0.0",
+		"postcss": "^8.4.14",
+		"postcss-import": "^14.1.0",
+		"prettier": "^2.5.1",
+		"tailwindcss": "^3.1.7",
+		"vite": "^3.0.1",
+		"vite-svg-loader": "^3.4.0"
+	},
+	"keywords": [
+		"vue",
+		"vue3",
+		"vuejs",
+		"vue3js",
+		"boilerplate",
+		"template",
+		"router",
+		"vuerouter",
+		"vue-router",
+		"tailwind",
+		"tailwindcss",
+		"tailwind-css",
+		"pinia",
+		"svg"
+	],
+	"author": "richardevcom <hello@richardev.com> (https://richardev.com)"
 }
