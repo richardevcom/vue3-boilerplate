@@ -60,7 +60,7 @@ npm run preview
 
 ```
 
-## List
+## Lint
 
 ```
 
