@@ -1,7 +1,7 @@
 {
 	"name": "@richardev/vue3-boilerplate",
 	"description": "Quick boilerplate for your next project, containing - Vite, Vuex, Vue Router & Tailwind CSS. This was created as part of my tutorial series.",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/richardevcom/vue3-boilerplate.git"
@@ -46,7 +46,25 @@
 		"tailwindcss",
 		"tailwind-css",
 		"pinia",
-		"svg"
+		"svg",
+		"vue 3 boilerplate",
+		"vue3 boilerplate",
+		"vue 3 skeleton",
+		"vue3 skeleton",
+		"vue 3 starter",
+		"vue3 starter",
+		"vue 3 webpack boilerplate",
+		"vue3 webpack boilerplate",
+		"vue 3 webpack skeleton",
+		"vue3 webpack skeleton",
+		"vue 3 webpack starter",
+		"vue3 webpack starter",
+		"vue3 enterprise boilerplate",
+		"vue 3 enterprise boilerplate",
+		"vue3 enterprise skeleton",
+		"vue 3 enterprise skeleton",
+		"vue3 enterprise starter",
+		"vue 3 enterprise starter"
 	],
 	"author": "richardevcom <hello@richardev.com> (https://richardev.com)"
 }
