@@ -1,0 +1,71 @@
+{
+	"name": "@richardev/vue3-boilerplate",
+	"description": "Quick boilerplate for your next project, containing - Vite, Vuex, Vue Router & Tailwind CSS. This was created as part of my tutorial series.",
+	"version": "1.0.8",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richardevcom/vue3-boilerplate.git"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview --port 4173",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+	},
+	"dependencies": {
+		"pinia": "^2.0.22",
+		"vue": "^3.2.39",
+		"vue-router": "^4.1.5"
+	},
+	"devDependencies": {
+		"@rushstack/eslint-patch": "^1.2.0",
+		"@vitejs/plugin-vue": "^3.1.0",
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"autoprefixer": "^10.4.11",
+		"cssnano": "^5.1.13",
+		"eslint": "^8.23.1",
+		"eslint-plugin-vue": "^9.5.1",
+		"postcss": "^8.4.16",
+		"postcss-import": "^15.0.0",
+		"prettier": "^2.7.1",
+		"sass": "^1.54.9",
+		"tailwindcss": "^3.1.8",
+		"vite": "^3.1.2",
+		"vite-svg-loader": "^3.6.0"
+	},
+	"keywords": [
+		"vue",
+		"vue3",
+		"vuejs",
+		"vue3js",
+		"boilerplate",
+		"template",
+		"router",
+		"vuerouter",
+		"vue-router",
+		"tailwind",
+		"tailwindcss",
+		"tailwind-css",
+		"pinia",
+		"svg",
+		"vue 3 boilerplate",
+		"vue3 boilerplate",
+		"vue 3 skeleton",
+		"vue3 skeleton",
+		"vue 3 starter",
+		"vue3 starter",
+		"vue 3 webpack boilerplate",
+		"vue3 webpack boilerplate",
+		"vue 3 webpack skeleton",
+		"vue3 webpack skeleton",
+		"vue 3 webpack starter",
+		"vue3 webpack starter",
+		"vue3 enterprise boilerplate",
+		"vue 3 enterprise boilerplate",
+		"vue3 enterprise skeleton",
+		"vue 3 enterprise skeleton",
+		"vue3 enterprise starter",
+		"vue 3 enterprise starter"
+	],
+	"author": "richardevcom <hello@richardev.com> (https://richardev.com)"
+}
