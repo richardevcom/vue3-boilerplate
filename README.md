@@ -23,7 +23,7 @@ Additionally I added [vite-svg-loader](https://github.com/jpkleemans/vite-svg-lo
 ## Install
 
 ```
-npm i @richardecom/vue3-boilerplate
+npm i @richardev/vue3-boilerplate
 ```
 
 or
