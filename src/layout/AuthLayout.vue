@@ -1,10 +1,11 @@
 <template>
   <div
-    class="w-screen h-screen"
+    class="w-screen h-screen flex justify-center items-center"
     :style="{
       backgroundImage: 'url(' + backgroundImg + ')',
     }"
     >
+    <slot></slot>
   </div>
 </template>
 
