@@ -13,6 +13,9 @@
 		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
 	},
 	"dependencies": {
+		"@ckeditor/ckeditor5-build-classic": "^40.2.0",
+		"@ckeditor/ckeditor5-vue": "^5.1.0",
+		"firebase": "^10.7.1",
 		"pinia": "^2.0.22",
 		"vee-validate": "^4.12.3",
 		"vue": "^3.2.39",

@@ -19,6 +19,34 @@ const router = createRouter({
       component: () => import("@/views/mains/DefaulMainView.vue"),
     },
     {
+      path: "/home-managerment",
+      name: "home-managerment",
+      component: () => import("@/views/home-managerment/MainPage.vue"),
+    },
+    {
+      path: "/research",
+      name: "research",
+      redirect: { name: "research-post-list" },
+      component: () => import("@/views/research/IndexPage.vue"),
+      children: [
+        {
+          path: "main",
+          name: "research-main",
+          component: () => import("@/views/research/MainPage.vue"),
+        },
+        {
+          path: "post-list",
+          name: "research-post-list",
+          component: () => import("@/views/research/posts/PostsList.vue"),
+        },
+        {
+          path: "post-detail/:id",
+          name: "research-post-detail",
+          component: () => import("@/views/research/posts/AddPost.vue"),
+        },
+      ],
+    },
+    {
       path: "/about",
       name: "about",
       // route level code-splitting
