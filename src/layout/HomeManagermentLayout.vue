@@ -546,7 +546,7 @@
         </div>
       </div>
     </aside>
-    <div class="ml-64">
+    <div class="ml-64 w-full">
       <slot></slot>
     </div>
   </div>

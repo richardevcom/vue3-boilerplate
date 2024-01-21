@@ -8,7 +8,9 @@
         Homekit
       </div>
       <div class="bg-white rounded-md p-8 grid gap-4 xl:min-w-[500px]">
-        <div class="text-center font-bold text-2xl">Sign in to your account</div>
+        <div class="text-center font-bold text-2xl">
+          Sign in to your account
+        </div>
         <form @submit="onSubmit" class="gap-4 grid">
           <div class="grid gap-1">
             <label for="name" class="font-bold">Your email</label>
@@ -58,8 +60,6 @@
 import AuthLayout from "@/layout/AuthLayout.vue";
 import { useForm } from "vee-validate";
 import * as yup from "yup";
-import logoImg from "@/assets/images/logo.svg";
-console.log(logoImg);
 const schema = yup.object({
   email: yup.string().email().required(),
   password: yup.string().min(6).required(),

@@ -1,5 +1,11 @@
 <template>
-  <div v-if="!isLoading">
+  <div>
+    <input />
+    <button @click="() => router.push({ name: 'research-post-add' })">
+      Add new
+    </button>
+  </div>
+  <div v-if="!isLoading" class="grid gap-2">
     <div v-for="post of listPost" :key="post.id">
       <div class="flex gap-4">
         <!-- left -->
@@ -11,10 +17,10 @@
           }"
         ></div>
         <!-- right -->
-        <div class="w-1/2">
+        <div class="w-1/2 grid gap-1">
           <!-- tag  -->
           <div class="bg-blue-500 text-white rounded-sm w-max px-1 py-1">
-            Vue
+            JS
           </div>
           <!-- title -->
           <div class="text-2xl font-bold text-black">{{ post.name }}</div>
@@ -25,18 +31,34 @@
           </div>
           <!-- short content -->
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-            quidem maiores. Adipisci fugit quo eius quisquam ea quidem,
-            possimus, eum fuga omnis provident debitis numquam commodi magnam
-            obcaecati accusantium dolor....
+            {{ post.shortDescription }}
           </div>
           <!-- action button -->
-          <div>
-            <button
-              class="bg-white text-blue-500 rounded-md px-2 py-1 border border-blue-500"
+          <div class="flex gap-2">
+            <router-link
+              :to="{ name: 'research-post-detail', params: { id: post.id } }"
             >
-              Read more
-            </button>
+              <button
+                class="bg-white text-blue-500 rounded-md px-2 py-1 border border-blue-500"
+              >
+                Read more
+              </button>
+            </router-link>
+            <!-- <button
+              class="bg-white text-red-500 rounded-md px-2 py-1 border border-red-500"
+              @click="handDelete(post)"
+            >
+              Delete
+            </button> -->
+            <router-link
+              :to="{ name: 'research-post-edit', params: { id: post.id } }"
+            >
+              <button
+                class="bg-white text-yellow-500 rounded-md px-2 py-1 border border-yellow-500"
+              >
+                Edit
+              </button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -47,11 +69,20 @@
 <script setup>
 import { computed, onMounted } from "vue";
 import { usePostResearchStore } from "@/stores/research";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const store = usePostResearchStore();
 
+function handDelete(post) {
+  const isConfirm = window.confirm("Are you sure delete this post?");
+  if (!isConfirm) return;
+  isConfirm && store.deletePost(post.id);
+  window.alert("Delete success");
+  store.fetchList();
+}
+
 const listPost = computed(() => {
-    console.log(store.list.data);
   return store.list.data;
 });
 const isLoading = computed(() => store.list.isLoading);

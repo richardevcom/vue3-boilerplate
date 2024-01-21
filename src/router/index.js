@@ -40,9 +40,19 @@ const router = createRouter({
           component: () => import("@/views/research/posts/PostsList.vue"),
         },
         {
+          path: "add-post",
+          name: "research-post-add",
+          component: () => import("@/views/research/posts/AddPost.vue"),
+        },
+        {
+          path: "post-edit/:id",
+          name: "research-post-edit",
+          component: () => import("@/views/research/posts/AddPost.vue"),
+        },
+        {
           path: "post-detail/:id",
           name: "research-post-detail",
-          component: () => import("@/views/research/posts/AddPost.vue"),
+          component: () => import("@/views/research/posts/Viewpost.vue"),
         },
       ],
     },

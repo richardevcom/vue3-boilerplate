@@ -18,6 +18,11 @@ export const usePostStore = defineStore({
       isError: false,
       isAdded: false,
     },
+    delete: {
+      isLoading: false,
+      isError: false,
+      isDeleted: false,
+    },
   }),
   getters: {
     getList: (state) => state.list,
@@ -29,21 +34,68 @@ export const usePostStore = defineStore({
       this.list.isError = false;
       try {
         const data = await postService.fetchList();
-        this.list.isLoading = false;
-        this.list.isLoading = false;
         this.list.data = data;
       } catch (error) {
-        this.list.isLoading = false;
+        console.log(error);
         this.list.isError = true;
         throw error;
+      } finally {
+        this.list.isLoading = false;
       }
     },
-    async add() {
-      this.add.isLoading = true;
-      setTimeout(() => {
-        this.add.isLoading = false;
+    async addPost(postData) {
+      try {
+        this.add.isLoading = true;
+        await postService.createPost(postData);
         this.add.isAdded = true;
-      }, 2000);
+        this.add.isError = false;
+      } catch (error) {
+        console.log(error);
+        this.add.isAdded = false;
+        this.add.isError = true;
+      } finally {
+        this.add.isLoading = false;
+      }
+    },
+    async updatePost(postData) {
+      try {
+        this.add.isLoading = true;
+        await postService.updatePost(postData);
+        this.add.isAdded = true;
+        this.add.isError = false;
+      } catch (error) {
+        console.log(error);
+        this.add.isAdded = false;
+        this.add.isError = true;
+      } finally {
+        this.add.isLoading = false;
+      }
+    },
+    async deletePost(id) {
+      try {
+        this.delete.isLoading = true;
+        await postService.deletePost(id);
+        this.delete.isError = false;
+      } catch (error) {
+        console.log(error);
+        this.delete.isError = true;
+        this.delete.isDeleted = false;
+      } finally {
+        this.delete.isLoading = false;
+      }
+    },
+    async fetchDetailPost(id) {
+      try {
+        this.detail.isLoading = true;
+        const data = await postService.getDetail(id);
+        this.detail.data = data;
+        this.detail.isError = false;
+      } catch (error) {
+        console.log(error);
+        this.detail.isError = true;
+      } finally {
+        this.detail.isLoading = false;
+      }
     },
   },
 });
