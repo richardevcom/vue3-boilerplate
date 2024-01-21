@@ -74,13 +74,13 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const store = usePostResearchStore();
 
-function handDelete(post) {
-  const isConfirm = window.confirm("Are you sure delete this post?");
-  if (!isConfirm) return;
-  isConfirm && store.deletePost(post.id);
-  window.alert("Delete success");
-  store.fetchList();
-}
+// function handDelete(post) {
+//   const isConfirm = window.confirm("Are you sure delete this post?");
+//   if (!isConfirm) return;
+//   isConfirm && store.deletePost(post.id);
+//   window.alert("Delete success");
+//   store.fetchList();
+// }
 
 const listPost = computed(() => {
   return store.list.data;

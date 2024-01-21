@@ -67,8 +67,8 @@ onMounted(() => {
 });
 
 watch([postData], () => {
-  shortDescription.value = postStore.detail.data.shortDescription;
-  name.value = postStore.detail.data.name;
-  postContent.value = postStore.detail.data.content;
+  shortDescription.value = postStore.detail?.data?.shortDescription;
+  name.value = postStore.detail?.data?.name;
+  postContent.value = postStore.detail?.data?.content;
 });
 </script>

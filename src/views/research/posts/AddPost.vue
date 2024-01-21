@@ -9,6 +9,7 @@
       </button>
     </router-link>
     <button
+      v-if="postId"
       class="text-white bg-red-700 hover:bg-red-800 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
       @click="handDelete"
     >
@@ -128,11 +129,13 @@ function handDelete() {
 }
 
 onMounted(() => {
-  postStore.fetchDetailPost(postId.value);
+  if (postId.value) {
+    postStore.fetchDetailPost(postId.value);
+  }
 });
 watch([postData], () => {
-  shortDescription.value = postStore.detail.data.shortDescription;
-  name.value = postStore.detail.data.name;
-  postContent.value = postStore.detail.data.content;
+  shortDescription.value = postStore.detail?.data?.shortDescription;
+  name.value = postStore.detail?.data?.name;
+  postContent.value = postStore.detail?.data?.content;
 });
 </script>
