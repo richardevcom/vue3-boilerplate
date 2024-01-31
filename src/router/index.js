@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import("@/views/home-managerment/MainPage.vue"),
     },
     {
+      path: "/task-managerment",
+      name: "task-managerment",
+      component: () => import("@/views/task-managerment/MainPage.vue"),
+    },
+    {
       path: "/research",
       name: "research",
       redirect: { name: "research-post-list" },

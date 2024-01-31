@@ -15,7 +15,7 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #heading>Documentation</template>
 
     Vue’s
-    <a target="_blank" href="https://vuejs.org/">official documentation</a>
+    <a href="https://vuejs.org/">official documentation</a>
     provides you with all information you need to get started.
   </WelcomeItem>
 
@@ -24,7 +24,16 @@ import SupportIcon from "./icons/IconSupport.vue";
       <ToolingIcon />
     </template>
     <template #heading>Home Managerment</template>
-    <a href="/home-managerment" target="_blank">Link Home Managerment Page</a>.
+    <a href="/home-managerment">Link Home Managerment Page</a>.
+    <br />
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Task Managerment</template>
+    <a href="/task-managerment">Link Task Managerment Page</a>.
     <br />
   </WelcomeItem>
 
@@ -33,7 +42,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <EcosystemIcon />
     </template>
     <template #heading>Research</template>
-    <a href="/research" target="_blank">Link Research Page</a>.
+    <a href="/research">Link Research Page</a>.
     <br />
   </WelcomeItem>
 
@@ -44,14 +53,13 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #heading>Community</template>
 
     Got stuck? Ask your question on
-    <a target="_blank" href="https://chat.vuejs.org">Vue Land</a>, our official
-    Discord server, or
-    <a target="_blank" href="https://stackoverflow.com/questions/tagged/vue.js"
-      >StackOverflow</a
+    <a href="https://chat.vuejs.org">Vue Land</a>, our official Discord server,
+    or
+    <a href="https://stackoverflow.com/questions/tagged/vue.js">StackOverflow</a
     >. You should also subscribe to
-    <a target="_blank" href="https://news.vuejs.org">our mailing list</a> and
-    follow the official
-    <a target="_blank" href="https://twitter.com/vuejs">@vuejs</a>
+    <a href="https://news.vuejs.org">our mailing list</a> and follow the
+    official
+    <a href="https://twitter.com/vuejs">@vuejs</a>
     twitter account for latest news in the Vue world.
   </WelcomeItem>
 
@@ -63,6 +71,6 @@ import SupportIcon from "./icons/IconSupport.vue";
 
     As an independent project, Vue relies on community backing for its
     sustainability. You can help us by
-    <a target="_blank" href="https://vuejs.org/sponsor/">becoming a sponsor</a>.
+    <a href="https://vuejs.org/sponsor/">becoming a sponsor</a>.
   </WelcomeItem>
 </template>

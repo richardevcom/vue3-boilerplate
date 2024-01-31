@@ -7,7 +7,7 @@
   </div>
   <div v-if="!isLoading" class="grid gap-2">
     <div v-for="post of listPost" :key="post.id">
-      <div class="flex gap-4">
+      <div class="flex">
         <!-- left -->
         <div
           class="w-1/2 bg-cover"
@@ -17,7 +17,7 @@
           }"
         ></div>
         <!-- right -->
-        <div class="w-1/2 grid gap-1">
+        <div class="w-1/2 grid gap-1 pl-4">
           <!-- tag  -->
           <div class="bg-blue-500 text-white rounded-sm w-max px-1 py-1">
             JS
