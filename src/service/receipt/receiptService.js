@@ -1,23 +1,23 @@
 import { fireStoreService } from "@/service/firebase";
 
-const COLLECTION_NAME = "house";
+const COLLECTION_NAME = "receipts";
 
 async function fetchList() {
   const data = await fireStoreService.fetchList(COLLECTION_NAME);
   return data;
 }
 
-async function deleteHouse(id) {
+async function deleteReceipt(id) {
   const data = await fireStoreService.deleteDocument(COLLECTION_NAME, id);
   return data;
 }
 
-async function createHouse(postData) {
+async function createReceipt(postData) {
   const data = await fireStoreService.createDocument(COLLECTION_NAME, postData);
   return data;
 }
 
-async function updateHouse(postData) {
+async function updateReceipt(postData) {
   const data = await fireStoreService.updateDocument(
     COLLECTION_NAME,
     postData.id,
@@ -31,10 +31,10 @@ async function getDetail(postId) {
   return data;
 }
 
-export const postService = {
+export const billService = {
   fetchList,
-  deleteHouse,
-  createHouse,
-  updateHouse,
+  deleteReceipt,
+  createReceipt,
+  updateReceipt,
   getDetail,
 };

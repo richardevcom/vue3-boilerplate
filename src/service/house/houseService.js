@@ -1,6 +1,6 @@
 import { fireStoreService } from "@/service/firebase";
 
-const COLLECTION_NAME = "house";
+const COLLECTION_NAME = "houses";
 
 async function fetchList() {
   const data = await fireStoreService.fetchList(COLLECTION_NAME);
@@ -31,7 +31,7 @@ async function getDetail(postId) {
   return data;
 }
 
-export const postService = {
+export const houseService = {
   fetchList,
   deleteHouse,
   createHouse,
