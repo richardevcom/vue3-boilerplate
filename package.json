@@ -8,9 +8,9 @@
     "url": "https://github.com/richardevcom/vue3-boilerplate.git"
   },
   "scripts": {
-    "dev": "vite --config='vite.config.dev.cjs'",
-    "build": "vite build  --config='vite.config.prod.cjs'",
-    "preview": "vite preview --config='./vite.config.prod.js'",
+    "dev": "vite --config='vite.config.dev.mjs'",
+    "build": "vite build  --config='vite.config.prod.mjs'",
+    "preview": "vite preview --config='./vite.config.prod.mjs'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
