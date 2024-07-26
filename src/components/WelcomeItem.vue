@@ -16,6 +16,7 @@
 .item {
   margin-top: 2rem;
   display: flex;
+  position: relative;
 }
 
 .details {
@@ -29,7 +30,6 @@ i {
   place-content: center;
   width: 32px;
   height: 32px;
-
   color: var(--color-text);
 }
 
