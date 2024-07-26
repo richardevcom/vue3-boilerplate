@@ -1,7 +1,8 @@
 {
 	"name": "@richardev/vue3-boilerplate",
 	"description": "Quick boilerplate for your next project, containing - Vite, Vuex, Vue Router & Tailwind CSS. This was created as part of my tutorial series.",
-	"version": "1.0.8",
+	"private": true,
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/richardevcom/vue3-boilerplate.git"
@@ -12,7 +13,7 @@
 		"preview": "vite preview",
 		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
 		"format": "prettier --write src/"
-	  },
+	},
 	"dependencies": {
 		"pinia": "^2.1.7",
 		"vue": "^3.4.29",
@@ -21,18 +22,16 @@
 	"devDependencies": {
 		"@rushstack/eslint-patch": "^1.8.0",
 		"@vitejs/plugin-vue": "^5.0.5",
-    	"@vue/eslint-config-prettier": "^9.0.0",
-		"autoprefixer": "^10.4.11",
+		"@vue/eslint-config-prettier": "^9.0.0",
+		"autoprefixer": "^10.4.19",
 		"eslint": "^8.57.0",
 		"eslint-plugin-vue": "^9.23.0",
-		"postcss": "^8.4.16",
-		"postcss-import": "^15.0.0",
+		"postcss": "^8.4.40",
 		"prettier": "^3.2.5",
-		"sass": "^1.54.9",
-		"tailwindcss": "^3.1.8",
+		"sass": "^1.77.8",
+		"tailwindcss": "^3.4.7",
 		"vite": "^5.3.1",
 		"vite-plugin-vue-devtools": "^7.3.1"
-		
 	},
 	"keywords": [
 		"vue",
