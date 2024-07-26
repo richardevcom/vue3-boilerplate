@@ -1,7 +1,7 @@
 {
   "name": "@richardev/vue3-boilerplate",
   "description": "Quick boilerplate for your next project, containing - Vite, Vuex, Vue Router & Tailwind CSS. This was created as part of my tutorial series.",
-  "private": true,
+  "private": false,
   "type": "module",
   "version": "1.1.1",
   "repository": {
